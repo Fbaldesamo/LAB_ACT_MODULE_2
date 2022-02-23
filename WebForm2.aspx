@@ -9,6 +9,7 @@
         .auto-style1 {
             font-size: x-large;
         }
+
         .auto-style2 {
             font-size: large;
         }
@@ -123,28 +124,25 @@
             <br />
             <span class="auto-style1">Total Bill:  </span>
             <asp:TextBox ID="TextBox8" runat="server" Height="34px"></asp:TextBox>
+                    <br />
+                    <br />
             <br />
 <%--                end here--%>
-
-
-
-
+                    <asp:Button ID="Button3" runat="server" BackColor="#66CCFF" Height="64px" OnClick="Button3_Click" Text="SEND ORDER" Width="192px" />
                 </ContentTemplate>
             </asp:UpdatePanel>
-            
+
             <br />
             About us:
             <br />
             <br />
-            </strong>BurgerLight is the largest fast food chain in the Philippines, operating a nationwide network of over 750 stores. A dominant market leader in the Philippines, BurgerLight enjoys the lion’s share of the local market that is more than all the other multinational brands combined. The company has also embarked on an aggressive IT114L international expansion plan in the USA, Vietnam, Hong Kong, Saudi Arabia, Qatar and Brunei, firmly establishing itself as a growing international QSR player. BurgerLight was founded by Adomar L. Ilao and his family with its humble beginnings as an Funeral Parlor which later grew into an emerging global brand. At the heart of its success is a family-oriented approach to personnel management, making Jollibee one of the most admired employers in the region with an Employer of the Year Award from the Personnel Management Association of the Philippines, Customer satisfaction has always been key to Jollibee’s success. Never losing sight of its goals, 
+            </strong>BurgerLight is the largest fast food chain in the Philippines, operating a nationwide network of over 750 stores. A dominant market leader in the Philippines, BurgerLight enjoys the lion’s share of the local market that is more than all the other multinational brands combined. The company has also embarked on an aggressive IT114L international expansion plan in the USA, Vietnam, Hong Kong, Saudi Arabia, Qatar and Brunei, firmly establishing itself as a growing international QSR player. BurgerLight was founded by Adomar L. Ilao and his family with its humble beginnings as an Funeral Parlor which later grew into an emerging global brand. At the heart of its success is a family-oriented approach to personnel management, making Jollibee one of the most admired employers in the region with an Employer of the Year Award from the Personnel Management Association of the Philippines, Customer satisfaction has always been key to Jollibee’s success. Never losing sight of its goals,
             Jollibee has grown to be one of the most recognized and highly preferred brands in the Philippines. Now the market leader among fast food chains in the Philippines, claiming a market share that totals to more than half of the entire industry. <strong>
             <br />
             <br />
             <span class="auto-style2">Send us your suggestion here:</span
-           
-            
             </strong>&nbsp;
-            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="INQUIRE" />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="INQUIRE" CausesValidation="False" />
         </div>
     </form>
 </body>

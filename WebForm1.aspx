@@ -17,7 +17,10 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <br class="auto-style2" />
+            <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
+                     <br class="auto-style2" />
             <span class="auto-style3"><strong>Inquiry<br />
             </strong></span>
             <br class="auto-style2" />
@@ -77,11 +80,15 @@
 &nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button2" runat="server" BackColor="#33CCFF" OnClick="Button2_Click" Text="SUBMIT" Width="142px" />
 &nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button3" runat="server" BackColor="#FF3300" ForeColor="White" Text="RESET" Width="142px" />
+            <asp:Button ID="Button3" runat="server" BackColor="#FF3300" ForeColor="White" Text="RESET" Width="142px" OnClick="Button3_Click" />
             <br />
 &nbsp;&nbsp;&nbsp;
             <br class="auto-style2" />
             <br class="auto-style2" />
+
+                </ContentTemplate>
+            </asp:UpdatePanel>
+           
         </div>
     </form>
 </body>
